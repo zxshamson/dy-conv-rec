@@ -21,7 +21,7 @@ def parse_config():
     parser.add_argument("--runtime", type=int, default=0)
     parser.add_argument("--pos_weight", type=float, default=100)
     parser.add_argument("--optim", type=str, default="adam", choices=["adam", "sgd"])
-    parser.add_argument("--att", type=str, default="n", choices=["u", "n"])
+    parser.add_argument("--att", type=str, default="u", choices=["u", "n"])
     parser.add_argument("--month_num", type=int, default=4)
     parser.add_argument("--pretrained_file", type=str, default='glove.840B.300d.txt')
     parser.add_argument("--no_lstm", action="store_true")
